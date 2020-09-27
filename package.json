@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "CSS loader for react apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svortex/react-loader.git"
+  },
+  "keywords": [],
+  "author": "svortex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svortex/react-loader/issues"
+  },
+  "homepage": "https://github.com/svortex/react-loader#readme"
+}

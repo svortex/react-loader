@@ -1,0 +1,1 @@
+docker run -dit -v C:/Users/perso-pc/Workspace/react-loader:/usr/src/app svortex/react-loader-app bash
