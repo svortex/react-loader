@@ -1,1 +1,1 @@
-console.log('hello' + 'toto');
+import React from "react";
