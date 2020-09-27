@@ -4,7 +4,9 @@
   "description": "CSS loader for react apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.js'",
+    "lint:fix" : "prettier-eslint $PWD/'src/**/*.[jt]s?(x)' --write"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/svortex/react-loader/issues"
   },
-  "homepage": "https://github.com/svortex/react-loader#readme"
+  "homepage": "https://github.com/svortex/react-loader#readme",
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier-eslint-cli": "^5.0.0"
+  }
 }
