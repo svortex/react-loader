@@ -3,7 +3,7 @@ import styles from "./styles.css";
 
 const Bar = props => (
   <>
-    <style>${styles}</style>
+    <style>{`${styles}`}</style>
     <div className="lds-facebook">
       <div></div>
       <div></div>
