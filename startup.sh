@@ -1,1 +1,1 @@
-docker run -dit -v C:/Users/perso-pc/Workspace/react-loader:/usr/src/app svortex/react-loader-app bash
+docker run -dit -p 3000:3000 -v C:/Users/perso-pc/Workspace/react-loader:/usr/src/app svortex/react-loader-app bash
