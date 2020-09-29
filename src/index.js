@@ -1,2 +1,2 @@
-export * from "./Ring";
-export * from "./Bar";
+export * from './Ring'
+export * from './Bar'

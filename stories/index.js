@@ -3,5 +3,5 @@ import { storiesOf } from '@storybook/react'
 import { Ring, Bar } from '../src'
 
 storiesOf('Loaders', module)
-    .add('Bar', () => <Bar />)
-    .add('Ring', () => <Ring />)
+  .add('Bar', () => <Bar />)
+  .add('Ring', () => <Ring />)

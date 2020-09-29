@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./styles.css";
+import React from 'react'
+import styles from './styles.css'
 
 const Ring = props => (
   <>
@@ -11,6 +11,6 @@ const Ring = props => (
       <div></div>
     </div>
   </>
-);
+)
 
-export default Ring;
+export default Ring

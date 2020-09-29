@@ -1,13 +1,13 @@
-const { createElement } = require("react");
-const express = require("express");
-const { Bar } = require("react-loader");
-const { renderToString } = require("react-dom/server");
+const { createElement } = require('react')
+const express = require('express')
+const { Bar } = require('react-loader')
+const { renderToString } = require('react-dom/server')
 
-const port = 3000;
-const app = express();
+const port = 3000
+const app = express()
 
-app.get("*", (req, res) => {
-  const html = renderToString(createElement(Bar));
+app.get('*', (req, res) => {
+  const html = renderToString(createElement(Bar))
   res.send(`
   <!doctype html>
   <html>
@@ -20,7 +20,7 @@ app.get("*", (req, res) => {
   </body>
   </html>
   
-  `);
-});
+  `)
+})
 
-app.listen(port, () => console.log(`http://localhost:${port}`));
+app.listen(port, () => console.log(`http://localhost:${port}`))

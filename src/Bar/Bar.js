@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./styles.css";
+import React from 'react'
+import styles from './styles.css'
 
 const Bar = props => (
   <>
@@ -10,6 +10,6 @@ const Bar = props => (
       <div></div>
     </div>
   </>
-);
+)
 
-export default Bar;
+export default Bar
