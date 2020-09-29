@@ -6,7 +6,8 @@
   "module": "dist/bundle.esm.js",
   "sideEffects": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "eslint '**/*.js'",
     "lint:fix": "prettier-eslint $PWD/'src/**/*.[jt]s?(x)' --write",
     "prebuild": "rimraf dist",
@@ -33,19 +34,24 @@
     "@storybook/addon-essentials": "^6.0.22",
     "@storybook/addon-links": "^6.0.22",
     "@storybook/react": "^6.0.22",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.21.2",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.3.0",
+    "jest": "^26.4.2",
     "lint-staged": "^10.4.0",
     "prettier-eslint-cli": "^5.0.0",
     "pretty-quick": "^3.0.2",
     "react-is": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
@@ -59,9 +65,15 @@
   },
   "lint-staged": {
     "*.js": [
-      "lint:fix",
+      "npm run lint:fix",
+      "npm test",
       "git add"
     ]
   },
-  "dependencies": {}
+  "dependencies": {},
+  "jest": {
+    "moduleNameMapper": {
+      "\\.css$": "<rootDir>/mocks/styles.js"
+    }
+  }
 }
